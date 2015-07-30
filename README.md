@@ -6,6 +6,12 @@ It allows people to collaborate on spreadsheets over the internet in real time.
 
 Join the project or see it in action at http://www.ethersheet.org
 
+#Deploying on Stackato
+
+```
+stackato push -n
+```
+
 #For Users
 1. Download the latest version of ethesheet from https://ethersheet.org/releases/ethersheet_latest.tgz
 2. Unpack the tarball and run the script named `install.sh`

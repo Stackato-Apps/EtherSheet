@@ -1,0 +1,10 @@
+applications:
+- name: EtherSheet
+  mem: 256M
+  services:
+    ${name}-db:
+      type: mysql
+  stackato:
+    hooks:
+      pre-staging:
+      - cp examples/config-example.js config.js
