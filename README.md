@@ -6,7 +6,7 @@ It allows people to collaborate on spreadsheets over the internet in real time.
 
 Join the project or see it in action at http://www.ethersheet.org
 
-#Deploying on Stackato
+#Deploying on HPE Helion Stackato
 
 ```
 stackato push -n
