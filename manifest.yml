@@ -1,10 +1,9 @@
 applications:
-- name: EtherSheet
+- name: ethersheet
+  buildpack: https://github.com/cloudfoundry/nodejs-buildpack
+  command: cp examples/config-example.js config.js && npm start
   memory: 256M
   services:
-    ${name}-db:
-      type: mysql
-  stackato:
-    hooks:
-      pre-staging:
-      - cp examples/config-example.js config.js
+  # mysql
+  - ethersheet-db
+  stack: cflinuxfs2
